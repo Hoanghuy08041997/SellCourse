@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: #ff9f1a;
+    padding: 80px 0 ;
+}
+
+.jumbotron-heading {
+    font-size: 3rem; 
+    color: #007bff; 
+    margin-bottom: 20px; 
+}
+.lead {
+    font-size: 1.25rem; 
+    color: #6c757d; 
+}
+

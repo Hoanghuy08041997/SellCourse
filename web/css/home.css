@@ -1,0 +1,104 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-y: auto;   /* Enable vertical scrolling if needed */
+}
+
+.category_block {
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 999;
+}
+
+.course-info {
+    display: inline-block;
+}
+
+.course-info img {
+    border: 10px;
+    border-color: black;
+    width: 280px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.course-info .details {
+    flex: 1;
+}
+
+.course-info h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#coursePopup {
+    width: 300px;
+    height: 600px;
+}
+
+#activePopup {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+}       
+
+#closePopupButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; 
+}
+
+#closePopupButton:hover {
+    color: #ff0000; 
+}
+
+#closePopupButton::before,
+#closePopupButton::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: #333; 
+}
+
+#closePopupButton::before {
+    transform: rotate(45deg);
+}
+
+#closePopupButton::after {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    .popup {
+        display: none !important;
+    }
+}

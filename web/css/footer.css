@@ -1,0 +1,49 @@
+/* footer.css */
+
+/* Style for the footer container */
+footer {
+    background-color: #343a40;
+    padding: 60px 0;
+}
+
+/* Style for the text in the footer */
+footer .text-light {
+    color: #ffffff;
+}
+
+/* Style for the headings in the footer */
+footer h5 {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Style for the links in the footer */
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Style for the links in the footer on hover */
+footer ul li a:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+/* Style for the copyright section in the footer */
+footer .copyright {
+    color: #f8f9fa;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* Style for the back to top link in the footer */
+footer .copyright a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+/* Style for the back to top link in the footer on hover */
+footer .copyright a:hover {
+    text-decoration: underline;
+}
+
